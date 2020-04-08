@@ -57,14 +57,11 @@ In this project, you will read a roman numeral from the user. First, you need to
 Sample Run:
 
 Enter a Roman numeral: IIIIIIIIIIIIIIII
-This is not a valid Roman numeral. Try again or press enter to quit.
-
+- This is not a valid Roman numeral. Try again or press enter to quit.
 Enter a Roman numeral: VIIIIIIIIIII
-This is not a valid Roman numeral. Try again or press enter to quit.
-
+- This is not a valid Roman numeral. Try again or press enter to quit.
 Enter a Roman numeral: VVIIIIII
-This is not a valid Roman numeral. Try again or press enter to quit.
-
+- This is not a valid Roman numeral. Try again or press enter to quit.
 Enter a Roman numeral: XIIIIII
-16
-Short form of XIIIIII is XVI
+- 16
+- Short form of XIIIIII is XVI
