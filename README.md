@@ -5,7 +5,9 @@ Following are problem definitions where number corresponds to the code files. Ea
 
 Script Name Format: 'Two Digit Problem Number'.'Order Number' 'Compomnent Description'
 <hr>
+
 ## 01
+
 ### Roman Numerals
 
 The Romans represented numbers using the numerals ``I``, ``V``, ``X``, ``L``, ``C``, ``D``, and ``M``. These numerals represent the following numbers:
@@ -65,4 +67,4 @@ This is not a valid Roman numeral. Try again or press enter to quit.
 
 Enter a Roman numeral: XIIIIII
 16
-- Short form of XIIIIII is XVI
+Short form of XIIIIII is XVI
