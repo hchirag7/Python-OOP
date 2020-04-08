@@ -1,0 +1,35 @@
+# finding decimal value
+
+def romToDec(rom):
+    
+    rom = rom.upper()
+    dec = 0
+    i = 0
+    while i < len(rom):
+        
+        # this letter's value and next (until last one)
+        indexer = valid_RomanLetters.index(rom[i])
+        this_value = value_RomanLetters[indexer]
+        
+        # condition to break if reached last letter
+        if i == len(rom) - 1:
+            dec += this_value
+            break
+        else:
+            indexer = valid_RomanLetters.index(rom[i+1])
+            next_value = value_RomanLetters[indexer]
+        
+        # add only this value for normal decreasing order
+        if this_value >= next_value:
+            dec += this_value
+            
+        # add difference of this and next value for pair
+        else:
+            dec += next_value - this_value
+            # skip next letter because we considered a pair here
+            i += 1
+        
+        # iterater increament
+        i += 1
+        
+    return dec    
