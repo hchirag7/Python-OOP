@@ -1,0 +1,19 @@
+# converting to optimal roman numeral
+
+def decToRom(dec):
+    
+    rom = ''
+    i = 0
+    while dec > 0:
+        
+        # divide with highest numeral
+        # if success, append it and repeat
+        if dec % combo_Dec[i] < dec:
+            dec = dec - combo_Dec[i]
+            rom = rom + combo_Rom[i]
+            
+        # if fail, move to next number
+        else:
+            i +=1
+    
+    return rom
