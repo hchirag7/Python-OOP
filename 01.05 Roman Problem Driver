@@ -1,0 +1,22 @@
+r = input('Enter a Roman numeral:').strip()
+
+while r != '':
+
+    # check if valid roman
+    if validateRoman(r):
+        
+        # convert to dec and print value
+        d = romToDec(r)
+        print(d)
+        
+        # find minimal representation and print accordingly
+        minR = decToRom(d)
+        if r.upper() == minR:
+            print('Given numeral, ' + r + ' is itself minimal represention.')
+        else:
+            print('Short form of ' + r + ' is ' + minR)
+        break
+    
+    # for invalid input ask again
+    else:
+        r = input('This is not a valid Roman numeral. Try again or press enter to quit.\nEnter a Roman numeral:')
