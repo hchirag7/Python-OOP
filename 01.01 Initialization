@@ -1,0 +1,10 @@
+# initialization: roman values
+
+valid_RomanLetters = ['M', 'D', 'C', 'L', 'X', 'V', 'I']
+value_RomanLetters = [1000, 500, 100, 50, 10, 5, 1]
+
+valid_RomanSubtract = ['CM', 'CD', 'XC', 'XL', 'IX', 'IV']
+value_RomanSubtract = [900, 400, 90, 40, 9, 4]
+
+combo_Rom = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+combo_Dec = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
