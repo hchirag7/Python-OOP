@@ -1,0 +1,35 @@
+# validation
+def validateRoman(rom):
+
+    # case insensitive check
+    rom = rom.upper()
+    
+    # condition 0: valid roman numerals
+    for letters in rom:
+        if letters not in valid_RomanLetters:
+            return False
+    
+    # condition 1: repetition upto three times or multiples
+    for letters in list(set(rom)):
+        if rom.count(letters) > 3 and rom.count(letters) % 3 != 0:
+            return False
+    
+    # condition 2: letter eligible for repetion
+    if rom.count('V') > 1 or rom.count('L') > 1 or rom.count('D') > 1: 
+        return False
+    
+    # condition 3 - 5:
+    for i in range(len(rom)-1):
+        this_letter = rom[i]
+        next_letter = rom[i+1]
+
+        # check for decreasing order of numerals
+        if valid_RomanLetters.index(next_letter) < valid_RomanLetters.index(this_letter):
+
+            # exceptions for increasing two letters
+            if this_letter + next_letter not in valid_RomanSubtract:
+
+                return False
+    
+    # validated for all the conditions
+    return True
