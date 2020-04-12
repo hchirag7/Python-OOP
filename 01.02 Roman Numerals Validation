@@ -11,7 +11,7 @@ def validateRoman(rom):
     
     # condition 1: repetition upto nine times
     for letters in list(set(rom)):
-        if rom.count(letters) < 10:
+        if rom.count(letters) > 9:
             return False
     
     # condition 2: letter eligible for repetion
