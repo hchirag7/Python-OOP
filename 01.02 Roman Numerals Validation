@@ -9,9 +9,9 @@ def validateRoman(rom):
         if letters not in valid_RomanLetters:
             return False
     
-    # condition 1: repetition upto three times or multiples
+    # condition 1: repetition upto nine times
     for letters in list(set(rom)):
-        if rom.count(letters) > 3 and rom.count(letters) % 3 != 0:
+        if rom.count(letters) < 10:
             return False
     
     # condition 2: letter eligible for repetion
