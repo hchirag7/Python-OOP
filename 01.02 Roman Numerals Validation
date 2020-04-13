@@ -9,9 +9,9 @@ def validateRoman(rom):
         if letters not in valid_RomanLetters:
             return False
     
-    # condition 1: repetition upto nine times
+    # condition 1: repetition upto eleven times
     for letters in list(set(rom)):
-        if rom.count(letters) > 9:
+        if rom.count(letters) > 11:
             return False
     
     # condition 2: letter eligible for repetion
@@ -24,11 +24,18 @@ def validateRoman(rom):
         next_letter = rom[i+1]
 
         # check for decreasing order of numerals
-        if valid_RomanLetters.index(next_letter) < valid_RomanLetters.index(this_letter):
+        if valid_RomanLetters.index(this_letter) > valid_RomanLetters.index(next_letter):
 
             # exceptions for increasing two letters
             if this_letter + next_letter not in valid_RomanSubtract:
-
+                return False
+    
+    # condition extra before 4 hours of submission
+    # higher numeral before increasing order numeral for subtraction
+    # exception of two letter numbers
+    if len(rom) > 2:
+        for letters in rom:
+            if valid_RomanLetters.index(rom[0]) > valid_RomanLetters.index(letters):
                 return False
     
     # validated for all the conditions
