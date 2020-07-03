@@ -1,6 +1,4 @@
 # Python-OOP
-When your friends have subjects, which you excel at.
-<hr>
 Following are problem definitions where number corresponds to the code files. Each set of code files is a meaningful component and can be executed individualy. For specified problem, it is advisable to run all components in the order given. Each problem will have it's own initialisation and driver file. Also, python jupyter notebook will be specified with problem number.
 <hr>
 Script Name Format: 'Two Digit Problem Number'.'Order Number' 'Compomnent Description'
